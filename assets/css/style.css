@@ -281,11 +281,11 @@ footer {
         padding: 0;
     }
 
-    #times > div {
-      width: 100%;  
-      clear: both;
-      height: 150px;
-      padding: 0;
+    #times>div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
     }
 
     hr {
@@ -318,27 +318,41 @@ footer {
         width: inherit;
     }
 
-    .left-about-heading h2, .right-about-heading h2 {
+    .left-about-heading h2,
+    .right-about-heading h2 {
         width: 100%;
         text-align: center;
 
     }
 
-    .left-about-heading p, .right-about-heading p {
+    .left-about-heading p,
+    .right-about-heading p {
         text-align: center;
         padding: 0 20px;
     }
 
     #photos {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #photos {
+        column-count: 3;
+    }
+
+
+}
+
+
+
+
+/* for small screen sizes 800px and down */
+@media screen and (max-width: 800px) {
+    #photos {
         column-count: 2;
+
+
+
     }
-
-    /* for small screen sizes 800px and down */
-    @media and (max-width: 800px) {
-        #photos {
-            column-count: 2;
-
-
-
-        }
-    }
+}
